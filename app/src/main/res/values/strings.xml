@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DadJokes</string>
+    <string name="jokes_header">Dad Jokes</string>
+    <string name="splash_button">Find Joke</string>
+    <string name="get_joke_btn">Finish Joke</string>
+    <string name="back_btn">Back Button</string>
+</resources>
