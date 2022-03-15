@@ -23,14 +23,14 @@
         android:id="@+id/textView"
         android:layout_width="322dp"
         android:layout_height="90dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="112dp"
         android:hint="Punchline:"
         android:padding="5dp"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
@@ -79,5 +79,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

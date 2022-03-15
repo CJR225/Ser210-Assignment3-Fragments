@@ -4,4 +4,6 @@
     <string name="splash_button">Find Joke</string>
     <string name="get_joke_btn">Finish Joke</string>
     <string name="back_btn">Back Button</string>
+    <string name="action_share">Share</string>
+    <string name="new_joke">New Joke</string>
 </resources>
