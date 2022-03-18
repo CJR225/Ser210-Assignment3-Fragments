@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class JokesActivity extends AppCompatActivity {
 
@@ -19,6 +20,10 @@ public class JokesActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
+
+        String joke = (String) getIntent().getExtras().get("Joke");
+        TextView textView = (TextView) findViewById(R.id.jokeSetup);
+        textView.setText(joke);
     }
 
     public void onClick(View view) {
