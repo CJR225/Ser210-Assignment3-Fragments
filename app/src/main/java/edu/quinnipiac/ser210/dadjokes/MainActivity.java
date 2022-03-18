@@ -60,6 +60,19 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_TEXT, text);
         shareActionProvider.setShareIntent(intent);
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.change_bkgrnd:
+
+
+
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+    }
 
     class FetchJoke extends AsyncTask<String,Void,String> {
 
