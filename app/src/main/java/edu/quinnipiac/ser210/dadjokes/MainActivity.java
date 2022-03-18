@@ -63,9 +63,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.change_bkgrnd:
+            case R.id.blue_background:
 
-
+                return true;
+            case R.id.red_background:
 
                 return true;
             default:

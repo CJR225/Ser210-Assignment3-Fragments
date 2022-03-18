@@ -8,6 +8,6 @@ public class jokeHandler {
 
     public String getRandomJoke(String randomJokeJsonStr) throws JSONException {
         JSONObject randomJokeJSONObj = new JSONObject(randomJokeJsonStr);
-        return randomJokeJSONObj.getString("text");
+        return randomJokeJSONObj.getString("setup");
     }
 }

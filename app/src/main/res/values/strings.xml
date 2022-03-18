@@ -6,4 +6,5 @@
     <string name="back_btn">Back Button</string>
     <string name="action_share">Share</string>
     <string name="new_joke">New Joke</string>
+    <string name="blue_bkgrnd"></string>
 </resources>
