@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
 
-       // Intent intent = new Intent(this, JokesActivity.class);
+       //Intent intent = new Intent(this, JokesActivity.class);
         //startActivity(intent);
 
         new FetchJoke().execute();
@@ -47,18 +47,27 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
+
         getMenuInflater().inflate(R.menu.menu_main, menu);
         MenuItem menuItem = menu.findItem(R.id.action_share);
         shareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
         setShareActionIntent("Want to share this dad joke?");
+
+
         return super.onCreateOptionsMenu(menu);
+
     }
 
     private void setShareActionIntent(String text) {
+
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, text);
         shareActionProvider.setShareIntent(intent);
+
+
+
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

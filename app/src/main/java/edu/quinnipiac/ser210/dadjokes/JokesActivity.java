@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class JokesActivity extends AppCompatActivity {
 
 
+
     //key: 9cc181177emsh18889f38a315853p1ff686jsn7ec323484f9f
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class JokesActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
+
 
     }
 }

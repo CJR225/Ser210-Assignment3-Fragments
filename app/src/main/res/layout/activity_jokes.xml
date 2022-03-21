@@ -21,16 +21,15 @@
 
     <TextView
         android:id="@+id/jokeSetup"
-        android:layout_width="322dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="112dp"
+        android:layout_width="321dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="116dp"
         android:hint="Setup:"
         android:padding="5dp"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/jokeActivityBkgrnd" />
 
@@ -38,7 +37,7 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="278dp"
         android:layout_height="67dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="Guess:"
         android:inputType="textPersonName"
