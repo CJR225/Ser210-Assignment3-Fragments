@@ -8,15 +8,14 @@
     >
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/mainBkgrnd"
         android:layout_width="450dp"
         android:layout_height="800dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/navy_bkgrnd" />
+        android:src="@drawable/navy_bkgrnd" />
 
     <TextView
         android:id="@+id/splash_header"
