@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String LOG_TAG = MainActivity.class.getSimpleName();
     jokeHandler jkHandler = new jokeHandler();
+    ImageView mainbkgrnd;
 
     private ShareActionProvider shareActionProvider;
     private String url1 = ("https://dad-jokes.p.rapidapi.com/random/jokes");
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        ImageView mainbkgrnd = findViewById(R.id.mainBkgrnd);
+        mainbkgrnd = findViewById(R.id.mainBkgrnd);
 
     }
 
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 URL url = new URL(url1);
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");
-                urlConnection.setRequestProperty("X-RapidAPI-Key", "9cc181177emsh18889f38a315853p1ff686jsn7ec323484f9f");
+                urlConnection.setRequestProperty("X-RapidAPI-Key", "72e550e293msh0b4974c37ccabdap1e4627jsnabebc1c35c3d");
                 urlConnection.connect();
 
                 InputStream in = urlConnection.getInputStream();
