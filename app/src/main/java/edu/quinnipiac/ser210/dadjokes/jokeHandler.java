@@ -21,7 +21,6 @@ public class jokeHandler {
     public ArrayList<String> getRandomJoke(String randomJokeJsonStr) throws JSONException {
         Log.i("holder",randomJokeJsonStr);
         JSONObject randomJokeJSONObj = new JSONObject(randomJokeJsonStr);
-        //return randomJokeJSONObj.getString("text");
 
         JSONArray array = randomJokeJSONObj.getJSONArray("body");
         JSONObject firstObject = (JSONObject)array.get(0);

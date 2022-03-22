@@ -41,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
     private String LOG_TAG = MainActivity.class.getSimpleName();
     jokeHandler jkHandler = new jokeHandler();
 
-    ImageView mainbkgrnd;
-
     private ShareActionProvider shareActionProvider;
     private String url1 = ("https://dad-jokes.p.rapidapi.com/random/jokes");
 
@@ -53,14 +51,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mainbkgrnd = findViewById(R.id.mainBkgrnd);
+        ImageView mainbkgrnd = findViewById(R.id.mainBkgrnd);
 
     }
 
     public void onClick(View view) {
 
         Intent intent = new Intent(this, JokesActivity.class);
-        intent.putExtra("holder", url1);
+
 
         new FetchJoke().execute();
     }
@@ -113,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
-            ArrayList<String> joke = null;
+            ArrayList<String> joke;
 
             try {
                 URL url = new URL(url1);

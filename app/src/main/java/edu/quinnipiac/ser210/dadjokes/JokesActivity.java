@@ -35,8 +35,6 @@ jokeHandler jkHandler = new jokeHandler();
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
 
-        jokebkgrnd = findViewById(R.id.jokeActivityBkgrnd);
-
         String joke = (String) getIntent().getExtras().get("Joke");
         TextView textView = (TextView) findViewById(R.id.jokeSetup);
         textView.setText(joke);
