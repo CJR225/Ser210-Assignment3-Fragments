@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:icon="@drawable/ic_baseline_share_24"
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"/>
+    <item
+        android:id="@+id/blue_background"
+        android:title="@string/blue_bkgrnd"
+        android:icon="@drawable/ic_blue_bkgrnd"
+        app:showAsAction="always"
+         />
+    <item
+        android:id="@+id/red_background"
+        android:icon="@drawable/ic_red_bkgrnd"
+        android:title="@string/red_bkgrnd"
+
+        app:showAsAction="always" />
+</menu>
