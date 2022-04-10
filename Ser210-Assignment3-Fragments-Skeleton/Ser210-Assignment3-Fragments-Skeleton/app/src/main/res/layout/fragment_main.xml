@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainFragment"
+    >
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/mainBkgrnd"
+        android:layout_width="450dp"
+        android:layout_height="800dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/navy_bkgrnd"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/splash_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:text="@string/jokes_header"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="325dp"
+            android:text="@string/splash_button"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:onClick="onClick"
+            android:backgroundTint="@android:color/white" />
+    </LinearLayout>
+</FrameLayout>
+    </android.support.widget.NestedScrollView>
