@@ -15,6 +15,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.ShareActionProvider;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.MenuItemCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -42,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     jokeHandler jkHandler = new jokeHandler();
     ImageView mainbkgrnd;
 
+
     private ShareActionProvider shareActionProvider;
     private String url1 = ("https://dad-jokes.p.rapidapi.com/random/jokes");
 
@@ -55,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         mainbkgrnd = findViewById(R.id.mainBkgrnd);
 
     }
+
 
     public void onClick(View view) {
 
@@ -87,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 
 
     @Override
@@ -155,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, JokesActivity.class);
             intent.putExtra("Joke", result.get(0));
             intent.putExtra("Punchline", result.get(1));
+
             startActivity(intent);
         }
     }

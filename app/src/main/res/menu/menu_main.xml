@@ -5,8 +5,12 @@
     <item android:id="@+id/action_share"
         android:title="@string/action_share"
         android:icon="@drawable/ic_baseline_share_24"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"/>
+<item android:id="@+id/screen_shot"
+    android:title="@string/ScreenShot"
+    android:icon="@drawable/ic_baseline_photo_camera_24"
+    app:showAsAction="always" />
     <item
         android:id="@+id/blue_background"
         android:title="@string/blue_bkgrnd"

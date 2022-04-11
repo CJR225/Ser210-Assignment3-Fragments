@@ -7,6 +7,7 @@
 
 package edu.quinnipiac.ser210.dadjokes;
 
+import android.os.Bundle;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 
 public class jokeHandler {
 
+    Bundle bundle = new Bundle();
 
     public ArrayList<String> getRandomJoke(String randomJokeJsonStr) throws JSONException {
         Log.i("holder",randomJokeJsonStr);
@@ -32,6 +34,8 @@ public class jokeHandler {
         list.add(punchline);
 
         return list;
+
+
     }
 
 }

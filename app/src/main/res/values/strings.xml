@@ -8,4 +8,7 @@
     <string name="new_joke">New Joke</string>
     <string name="blue_bkgrnd">Blue Background</string>
     <string name="red_bkgrnd">Red Background</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ScreenShot">Screen shot</string>
 </resources>

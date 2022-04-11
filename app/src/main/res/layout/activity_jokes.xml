@@ -19,41 +19,12 @@
         app:layout_constraintVertical_bias="0.507"
         android:src="@drawable/lightnavy_bkgrnd" />
 
-    <TextView
-        android:id="@+id/jokeSetup"
-        android:layout_width="321dp"
-        android:layout_height="131dp"
-        android:layout_marginTop="116dp"
-        android:hint="Setup:"
-        android:padding="5dp"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/jokeActivityBkgrnd" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="278dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="Guess:"
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jokeSetup" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonJoke"
         android:layout_width="170dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginBottom="124dp"
         android:backgroundTint="@android:color/white"
         android:onClick="onClick"
         android:text="@string/get_joke_btn"
@@ -65,22 +36,20 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/jokePunchline"
-        android:layout_width="312dp"
-        android:layout_height="97dp"
-        android:layout_marginBottom="112dp"
-        android:hint="Punchline:"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <include
         layout="@layout/toolbar_main"
         android:id="@+id/toolbar" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="edu.quinnipiac.ser210.dadjokes.jokeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="429dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

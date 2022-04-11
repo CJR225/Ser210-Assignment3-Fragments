@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighternavy"
+    tools:context=".jokeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/jokeSetupFrag"
+        android:layout_width="321dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:hint="Setup:"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+         />
+    <EditText
+        android:id="@+id/editTextTextPersonNameFrag"
+        android:layout_width="278dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="50dp"
+        android:ems="10"
+        android:hint="Guess:"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+         />
+</FrameLayout>
