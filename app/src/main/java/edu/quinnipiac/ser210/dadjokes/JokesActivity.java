@@ -41,26 +41,28 @@ public class JokesActivity extends AppCompatActivity {
 
         joke = (String) getIntent().getExtras().get("Joke");
 
-        Fragment fr1 = new jokeFragment();
+        jokeFragment frag = (jokeFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
+
+        frag.setJoke(joke);
 
 
 
         //TextView textView = (TextView) findViewById(R.id.jokeSetup);
         //textView.setText(joke);
 
-
+/*
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.fragmentContainerView, fr1);
         ft.commit();
+
+ */
     }
 
     public String getSetup() {
         return joke;
     }
     public void onClick(View view) {
-
-        Fragment fr2 = new punchlineFragment();
 
 
         String punchline = (String) getIntent().getExtras().get("Punchline");
@@ -70,12 +72,14 @@ public class JokesActivity extends AppCompatActivity {
 
 
 
-
+/*
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.fragmentContainerView, fr2);
         ft.commit();
 
+
+ */
 
     }
 
