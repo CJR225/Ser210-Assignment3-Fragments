@@ -3,56 +3,57 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/mainBkgrnd"
-        android:layout_width="9000dp"
-        android:layout_height="1200dp"
+        android:layout_width="1300dp"
+        android:layout_height="1000dp"
+
+        android:layout_marginStart="700dp"
+        android:rotation="90"
+        android:src="@drawable/navy_bkgrnd"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.429"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/navy_bkgrnd" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/splash_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+
+        android:layout_marginTop="100dp"
         android:gravity="center_horizontal"
         android:padding="15dp"
         android:text="@string/jokes_header"
         android:textColor="@color/white"
         android:textSize="50sp"
-
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="150dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="325dp"
+        android:backgroundTint="@android:color/white"
+        android:onClick="onClick"
         android:text="@string/splash_button"
+        android:textColor="@color/black"
         android:textSize="17sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:onClick="onClick"
-        android:backgroundTint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.729" />
 
     <include
-        layout="@layout/toolbar_main"
-        android:id="@+id/toolbar" />
-
-
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
