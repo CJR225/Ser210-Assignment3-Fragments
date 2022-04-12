@@ -31,6 +31,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -44,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
     private String LOG_TAG = MainActivity.class.getSimpleName();
     jokeHandler jkHandler = new jokeHandler();
     ImageView mainbkgrnd;
-
 
     private ShareActionProvider shareActionProvider;
     private String url1 = ("https://dad-jokes.p.rapidapi.com/random/jokes");
@@ -105,6 +106,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.red_background:
                 mainbkgrnd.setImageResource(R.drawable.red_and_black_synthwave_phone_wallpaper);
+                break;
+            case R.id.insert_link:
+                Snackbar link = Snackbar.make(findViewById(R.id.toolbar), "https://rapidapi.com/KegenGuyll/api/dad-jokes/", 2000);
+                link.show();
                 break;
             default:
                 return super.onOptionsItemSelected(item);
